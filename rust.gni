@@ -12,7 +12,7 @@ template("rust_crate") {
       source_root,
     ]
     outputs = []
-    depfile = "$target_gen_dir/$target_name.d"
+    depfile = "$target_out_dir/$target_name.d"
     script = "//v8/tools/run.py"
 
     args = [
